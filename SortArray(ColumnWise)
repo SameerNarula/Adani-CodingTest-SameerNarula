@@ -1,0 +1,11 @@
+ static int[][] sort(int arr[][], int c){
+	 int [] temp= new int[arr.length];
+	 for(int i=0;i<arr.length;i++) {
+		 temp[i]=arr[i][c];
+	 }
+	 Arrays.sort(temp);
+	 for(int i=0;i<arr.length;i++) {
+		 arr[i][c]=temp[i];
+	 }
+			 return arr;
+ }
